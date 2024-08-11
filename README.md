@@ -1,7 +1,8 @@
 ## LOGIC
 
 The repository contains two methods for implementing Scalable Reward Distribution with Compounding Stakes:
-This contract is a fork of the Liquity Stability Pool, adhering closely to the rules and patterns outlined in the https://github.com/liquity/liquity/blob/master/papers/Scalable_Reward_Distribution_with_Compounding_Stakes.pdf whitepaper.
+
+1. Liquity Stability Pool Fork: This contract is a fork of the Liquity Stability Pool, adhering closely to the rules and patterns outlined in the https://github.com/liquity/liquity/blob/master/papers/Scalable_Reward_Distribution_with_Compounding_Stakes.pdf whitepaper.
 
 Users can deposit staking tokens into the vault/contract, which can be integrated with a yield source. When a liquidation occurs, the total staked tokens in the vault decrease, but this loss is proportionally distributed among all stakers. Similarly, any reward tokens are distributed proportionally among the stakers.
 

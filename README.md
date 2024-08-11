@@ -1,3 +1,32 @@
+## LOGIC
+
+The repository contains two methods for implementing Scalable Reward Distribution with Compounding Stakes:
+This contract is a fork of the Liquity Stability Pool, adhering closely to the rules and patterns outlined in the https://github.com/liquity/liquity/blob/master/papers/Scalable_Reward_Distribution_with_Compounding_Stakes.pdf whitepaper.
+
+Users can deposit staking tokens into the vault/contract, which can be integrated with a yield source. When a liquidation occurs, the total staked tokens in the vault decrease, but this loss is proportionally distributed among all stakers. Similarly, any reward tokens are distributed proportionally among the stakers.
+
+
+2. Simple ERC4626 Vault: This is a basic ERC4626 vault implementation where users can deposit underlying assets in exchange for corresponding shares.
+
+The vault can be integrated with a yield source, allowing users to earn yield. If a liquidation occurs, the underlying assets decrease, which automatically propagates to the shareholders. Additionally, collateral obtained from the liquidation can be distributed proportionally, similar to the reward distribution mechanism in Sushi's MasterChef contract. This approach is straightforward and simple.
+
+
+
+
+Note: Both contracts are provided for showcasing the logic. There may be issues as I am still working on unit testing and refactoring some logic components.
+
+Repository Status: In Progress
+
+TODO
+
+- Add NatSpec comments
+- Correct decimal scaling and adjustments
+- Complete unit testing
+- Perform integration testing
+- Improve documentation
+
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**

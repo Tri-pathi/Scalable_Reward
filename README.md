@@ -20,11 +20,9 @@ Repository Status: In Progress
 
 TODO
 
-- Add NatSpec comments
-- Correct decimal scaling and adjustments
-- Complete unit testing
-- Perform integration testing
-- Improve documentation
+- Add NatSpec comments - ✔
+- Complete unit testing - Covered important function 
+- Improve documentation - ✔
 
 
 
